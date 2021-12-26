@@ -1,0 +1,186 @@
+/* De hoogte van je pagina */
+html {
+  height: 100%;
+}
+
+/* body voor alles waar CSS staat */
+body {
+  font-family: sans-serif;
+  background: linear-gradient(#182401, #0c1601);
+
+  margin:0;
+  padding:0;
+}
+
+/* image op je index pagina */
+#index-foto{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  height: 50%;
+  width: 50%;
+}
+
+/* buttons op je index pagina */
+.index-button{
+  width: 49.8%;
+  background-color: #006400;    
+  font-size: 75px;
+}
+.index-button:hover{
+  background-color: #228B22;
+}
+
+/* Button bij succesvol.php en einde.php */
+.success-button{
+  color:#fff;
+  background:#008000;
+  border:none;
+  text-transform:capitalize;
+  box-shadow: 0 10px 16px 1px rgb(125, 233, 125);
+
+  padding:10px 50px;
+  margin:30px 0;
+  border-radius:30px;
+  margin-bottom:20px;
+}  
+
+/* centreren + groen text bij success.php en einde.php*/
+.text{
+  color: #00ee00;
+  text-align: center;
+
+  margin-top: 100px;
+}
+.margin-geen{
+  margin-top: 0px;
+}
+
+/* container bij put people in house */
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  margin-top: 2%;
+}
+/* foto bij putpeople.php*/
+.person{
+  width:220px;
+  height: 150px;
+}
+
+/* layout gegevensbox bij putpeople */
+#gegevens{
+  text-align: center;
+  width: 60%;
+  color: white;
+  background-color: #008000;
+  margin-top: 2%;
+}
+
+/* style bij button */
+.knop{
+  background-color:#333333;
+  color:#00FF00;
+
+  border-radius:5px;
+  width: 35%;
+  font-size: 20px;
+  margin-bottom: 1%;
+  padding: 20px;
+}
+#Knoppen{
+  position: relative;
+  text-align: center;
+
+  margin-top: 4%;
+}
+
+/* go to next person zijn hidden */
+.hidden{
+  visibility:hidden;
+  margin-top: 1%;
+}
+
+/* Invulformulier template */
+.Create-Account {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 600px;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  border-radius: 10px;
+}
+
+.Create-Account h1 {
+  margin: 0 0 30px;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+}
+
+.Create-Account .input-invullen {
+  position: relative;
+}
+
+.Create-Account .input-invullen input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+.Create-Account .input-invullen label {
+  position: absolute;
+  top:0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: .5s;
+}
+
+.Create-Account .input-invullen input:focus ~ label,
+.Create-Account .input-invullen input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #03e9f4;
+  font-size: 12px;
+}
+
+.Create-Account form button {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #03e9f4;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: .5s;
+  margin-top: 1px;
+  margin-left: 190px;
+  letter-spacing: 4px
+}
+
+.Create-Account button:hover {
+  background: #03e9f4;
+  color: #fff;
+  border-radius: 5px;
+
+}
